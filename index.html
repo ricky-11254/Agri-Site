@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriYangu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <a class="nav-link" href="index.html">AgriYangu</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Welcome to AgriYangu - Your Most Reliable Agricultural Products Site</h1>
+            <p>At AgriYangu, we are committed to providing you with the most reliable and high-quality
+                agricultural products. Our products are carefully selected to meet the needs of farmers and growers,
+                ensuring that you have access to the best tools and resources for your agricultural operations.</p>
+        </section>
+        <div class="slideshow-container">
+            <img src="image1.jpg" class="mySlides">
+            <img src="image2.jpg" class="mySlides">
+            <img src="image3.jpg" class="mySlides">
+        </div>
+	 <div id="video-container">
+        <video id="video" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+            </main>
+    <footer>
+        <p>&copy; AgriYangu. All Rights Reserved.</p>
+    </footer>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+           if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+</body>
+</html>
+ 
